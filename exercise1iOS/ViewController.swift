@@ -42,11 +42,11 @@ class ViewController: UIViewController {
                 },completion:{ (true) in
                     UIView.animate(withDuration: 1, animations: {
                         if self.imageView.frame.origin.y == self.space.bounds.minY && self.imageView.frame.origin.x == self.space.bounds.width - self.imageView.bounds.width
-//                            self.imageView.frame.origin.y == self.space.bounds.height - self.imageView.bounds.height && self.imageView.frame.origin.x == self.space.bounds.minX
+//
                                   {
                                      self.imageView.frame.origin.y += self.space.bounds.height - self.imageView.bounds.height
                                     
-                                   // self.imageView.frame.origin.x += self.space.bounds.width - self.imageView.bounds.width
+                                   
                                             }
                     },completion: {
                         (true) in
@@ -59,11 +59,11 @@ class ViewController: UIViewController {
                             (true) in
                             UIView.animate(withDuration: 1, animations: {
                                if  self.imageView.frame.origin.y == self.space.bounds.height - self.imageView.bounds.height && self.imageView.frame.origin.x == self.space.bounds.minX
-                               // self.imageView.frame.origin.y == self.space.bounds.minY && self.imageView.frame.origin.x == self.space.bounds.width - self.imageView.bounds.width
+                               
                                           {
                                                 
                                             self.imageView.frame.origin.y -= self.space.bounds.height - self.imageView.bounds.height
-                                            // self.imageView.frame.origin.x -= self.space.bounds.width - self.imageView.bounds.width
+                                           
                                                     }
                             },completion: {(true) in
                                 self.moveCounterClockwise()
